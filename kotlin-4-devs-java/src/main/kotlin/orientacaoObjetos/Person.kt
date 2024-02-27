@@ -1,4 +1,4 @@
-package secao5
+package orientacaoObjetos
 
 class Person constructor(firstName: String, lastName: String) {
     init {

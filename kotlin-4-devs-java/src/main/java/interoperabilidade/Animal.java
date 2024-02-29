@@ -1,9 +1,9 @@
 package interoperabilidade;
 
 public class Animal {
-    private  String name;
-    private  String kind;
-    private  Integer weight;
+    private final String name;
+    private final String kind;
+    private Integer weight;
 
     public Animal(String name, String kind, Integer weight) {
         this.name = name;
@@ -15,16 +15,8 @@ public class Animal {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getKind() {
         return kind;
-    }
-
-    public void setKind(String kind) {
-        this.kind = kind;
     }
 
     public Integer getWeight() {
@@ -36,6 +28,8 @@ public class Animal {
     }
 
     public String show() {
-        return name + "ia a " + kind + " and weighs " + weight + " kg!";
+
+        return name + " is a " + kind + " and weighs " + weight + " kg!";
+
     }
 }
